@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../login_signup.css">
+</head>
+<body>
+   
+    <div class="main">
+            <% if(err){%>
+             <div id="wrong"><%=message%></div>
+             <% }%>
+            <% if(success){%>
+             <div id="success"><%=message%></div>
+            <% }%>
+        <div class="loginBox">
+             
+            <h2 id="Login_h2">User Login </h2>
+            <form  method="post" action="/login">
+            <div class="inputTags">
+                <label for="email">User Email : </label>
+                <input required name="email" type="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="inputTags">
+                <label for="password">Password : </label>
+                <input required minlength="5" name="password" type="password" id="password" placeholder="Enter your password">
+            </div>
+            <input type="submit" id="login" value="Login">
+            </form>
+            <div class="forgotPassword"> <a href="/forgotPassword">forgot password</a> </div>
+            <div class="adminLogin"> <a href="/admin/login">Admin Login</a> </div>
+            <div class="rightEnd">New User ? <a href="/signup">Sign Up</a></div>
+        </div>
+    </div>
+</body>
+<script src="../errorSuccessShow.js"></script>
+</html>

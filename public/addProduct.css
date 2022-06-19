@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    background-color: rgb(240, 248, 248);
+    align-items: center;
+}
+.main >h1{
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.containor{
+   width: 50vw;
+   height: 65vh;
+   background-color:white;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   margin-top: 10vh;
+   justify-content: center;
+}
+.inputTags{
+    margin: 5vh auto;
+    display: flex;
+}
+.input{
+    width: 20vw;
+}
+.label{
+    width: 15vw;
+    font-size: 1.5vw;
+}
+input{
+    height: 4vh;
+}
+#addProduct{
+    display: block;
+    height: 6vh;
+    margin: auto;
+    background-color: rgb(109, 109, 240);
+    color: whitesmoke;
+    font-weight: bold;
+    padding: 1.5vh 1vw;
+    border: none;
+    border-radius:0.4vw ;
+    font-size: 1.3vw;
+}
+#addProduct:hover{
+    background-color: rgb(4, 4, 255);
+}

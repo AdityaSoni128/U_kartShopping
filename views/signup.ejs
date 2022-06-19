@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp Page</title>
+    <link rel="stylesheet" href="login_signup.css">
+</head>
+<body>
+    <div class="main">
+        <% if(err){%>
+            <div id="wrong"> <%= message%></div>
+        <% }%>
+        <div class="signupBox">
+             
+            <h2 id="Login_h2">Sign Up form</h2>
+            <form method="post" action="/signup" enctype="multipart/form-data">
+            <div class="inputTags">
+                <label for="userName">UserName : </label>
+                <input required name="userName" type="text" id="userName" placeholder="Enter your Name">
+            </div>
+            <div class="inputTags">
+                <label for="email">Email : </label>
+                <input required name="email" type="email" id="email" placeholder="Enter your Email">
+            </div>
+            <div class="inputTags">
+                <label for="image">Add Profile : </label>
+                <input required name="image" type="file" id="image" placeholder="Add your Profile">
+            </div>
+            <div class="inputTags">
+                <label for="password">Password : </label>
+                <input required name="password" type="password" id="password" placeholder="Enter your Password">
+            </div>
+            <div class="inputTags">
+                <label for="cpassword"> Confirm Password : </label>
+                <input required name="cpassword" type="password" id="cpassword" placeholder="Re-enter your Password">
+            </div>
+            
+            <input type="submit" id="Register" />
+            </form>
+            <div class="rightEnd1">Already a User ? <a href="/login">Login</a></div>
+        </div>
+    </div>
+</body>
+<script src="errorSuccessShow.js"></script>
+</html>

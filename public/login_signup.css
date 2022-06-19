@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("./ecomBackImg.jpg") center  no-repeat;
+  background-size: 100vw 100vh;
+  align-items: center;
+}
+input{
+  width: 20vw;
+}
+h2{
+  font-size: 2.5vw;
+  font-family:'Kalam', "cursive";
+}
+label{
+  font-size: 2vw;
+}
+.ourUser{
+  width: 60vw;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vw;
+}
+#success{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80vw;
+height: 8vh;
+font-family:'Kalam', "cursive";
+font-weight: bold;
+background-color: rgb(40, 252, 75);
+font-size: 18px;
+text-align: center;
+padding: 4px 10px;
+
+}
+#wrong{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80vw;
+height: 8vh;
+background-color: rgb(236, 99, 99);
+font-size: 18px;
+font-family:'Kalam', "cursive";
+font-weight: bold;
+text-align: center;
+padding: 4px 10px;
+
+}
+.loginBox{
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+right: 18vw;
+top: 15vh;
+width: 34vw;
+height: 40vh;
+margin-top: 30px;
+}
+.signupBox{
+display: flex;
+flex-direction: column;
+align-items: center;
+position: absolute;
+right: 18vw;
+top: 5vh;
+width: 60vw;
+height: 60vh;
+margin-top: 20px;
+}
+.inputTags{
+  display: flex;
+  justify-content: flex-start;
+padding: 2vh 0;
+margin: 1vh auto;
+}
+#Login_h2{
+margin-top: 2vh;
+margin-bottom: 4vh;
+}
+input{
+font-size: 1.4vw;
+padding: 2px;
+border: none;
+border-radius: .3vw;
+}
+label{
+font-size: 1.4vw;
+font-weight: bold;
+}
+#login,#Register{
+padding: 6px 20px;
+ width: 12vw;
+ height: 5vh;
+  background: blue;
+  color: antiquewhite;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  margin: auto;
+}
+.logout a{
+padding: 6px 20px;
+  background: blue;
+  color: antiquewhite;
+  font-weight: 600;
+  border-radius: 8px;
+}
+#login:hover,#Register:hover,.forgotPassword >a:hover,.rightEnd >a:hover ,.adminLogin a:hover,.rightEnd1 a:hover{
+  background:antiquewhite ;
+  color: blue;
+}
+.forgotPassword{
+  position: absolute;
+  bottom: -8vh;
+  left: -3vw;
+}
+.forgotPassword a,.rightEnd a{
+  background-color: blue;
+  color: antiquewhite;
+  font-family: "kalam","cursive";
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5vh 1vw;
+  border-radius: .4vw;
+}
+.adminLogin{
+  position: absolute;
+  bottom: -8vh;
+  left: 9vw;
+}
+.adminLogin a,.rightEnd a,.rightEnd1 a{
+  background-color: blue;
+  color: antiquewhite;
+  font-family: "kalam","cursive";
+  font-weight: bold;
+  text-decoration: none;
+  padding: 0.5vh 1vw;
+  border-radius: .4vw;
+}
+.rightEnd{
+position: absolute;
+bottom: -8vh;
+left:19vw;
+}
+
+.rightEnd1{
+    position: absolute;
+    bottom: -8vh;
+    right: 8vw;
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+  .loginBox{
+    height: 50vh;
+    width: 70vw;
+  }
+  h2{
+    font-size: 4vw;
+  }
+  .inputTags{
+    width: 80%;
+  }
+  input{
+    font-size: 2vw;
+    padding: 2vh .5vw;
+    width: 55%;
+  }
+  label{
+    font-size: 3vw;
+  }
+  .rightEnd{
+    font-size: 3vw;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .loginBox{
+    height: 43vh;
+    width: 80vw;
+  }
+  h2{
+    font-size: 5vw;
+  }
+  .inputTags{
+    width: 80%;
+  }
+  input{
+    font-size: 2.5vw;
+    padding: 1.5vh .5vw;
+    width: 60%;
+  }
+  label{
+    font-size: 4vw;
+  }
+  .rightEnd{
+    font-size: 3.5vw;
+  }
+}
+@media only screen and (max-height: 500px) {
+  .loginBox{
+    height: 53vh;
+    width: 80vw;
+  }
+}

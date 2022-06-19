@@ -1,0 +1,35 @@
+<%- include('partials/navBar.ejs',{userData:data}) %>
+  <link rel="stylesheet" href="page1_PLus_cart.css">
+ <div class="mid-Content">
+         <% if(err){%>
+             <div id="wrong"><%=message%></div>
+         <% }%>
+        <h1>Top products for you</h1>
+        <div class="cards_Containor">
+        <%items.forEach(function(elem){%>
+        
+            <div class="card">
+                <img src="<%=elem.productimage%>" alt="img">
+                <h3><%=elem.productname%></h3>
+                <div class="buttons">
+                <button class="view-details">View Description</button>
+                <% if(cartItems.includes(elem._id.valueOf())){%>
+                 <button class="added" id="<%=elem._id%>">Added</button>
+                <% } else {%>
+                 <button class="add-to-cart" id="<%=elem._id%>">AddToCart</button>
+                <%}%>
+                </div>
+                <div class="description">
+                <h2 class="price">price = Rs<%= elem.productprice%></h2>
+                <p><%= elem.productdescription%></p>
+                </div>
+            </div>  
+       
+        <% })%>
+        </div>
+       <button id="load-More"><a href="/loadMore">Load More</a></button>
+    </div>
+
+</body>
+<script src="page1.js"></script>
+<script src="errorSuccessShow.js"></script>

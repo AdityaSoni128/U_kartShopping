@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+.main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background: url("./ecomBackImg.jpg") center  no-repeat;
+  background-size: 100vw 100vh;
+ align-items: center;
+}
+.content{
+  display: flex;
+  height: 30vh;
+  margin-top: 17vh;
+  margin-left: 10vw;
+}
+#verify-h2{
+  margin: 4vh 0;
+  text-align: center;
+}
+#wrong{
+display: flex;
+align-items: center;
+justify-content: center;
+width: 80vw;
+height: 8vh;
+background-color: rgb(236, 99, 99);
+font-size: 18px;
+font-family:'Kalam', "cursive";
+font-weight: bold;
+text-align: center;
+padding: 4px 10px;
+
+}
+.inputTags{
+  display: flex;
+  justify-content: flex-start;
+padding: 2vh 0;
+margin: 1vh auto;
+}
+input{
+  font-size: 1.4vw;
+  padding: 2px;
+  border: none;
+  border-radius: .3vw;
+  }
+label{
+  font-size: 1.4vw;
+  font-weight: bold;
+}
+#verify,#changePassword{
+  padding: 6px 20px;
+ width: 12vw;
+ height: 5vh;
+  background: blue;
+  color: antiquewhite;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  display: block;
+  margin-left: 8vw;
+}
+#changePassword{
+  width: 15vw;
+}
+#verify:hover,#changePassword:hover{
+  background:antiquewhite ;
+  color: blue;
+}

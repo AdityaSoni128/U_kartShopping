@@ -1,0 +1,34 @@
+
+<link rel="stylesheet" href="page1_PLus_cart.css">
+<div class="main">
+    <div class="upperhead">
+        <h1>My Cart</h1>
+        <button><a href="/page1">Back to Home</a></button>
+    </div>
+    <% if(err){%>
+        <div id="wrong"><%=message%></div>
+    <% }%>
+    <div class="cards_containor">
+        <%data.forEach(function(elem){%>
+        <div class="card">
+            <img src="<%=elem.productimage%>" alt="imag not avaui">
+            <h2><%=elem.productname%></h2>
+            <h2>Rs <%=elem.productprice%></h2>
+            <div class="quantity">
+                <span>Quantity : <span> <%=elem.quantity%></span></span>
+                <button id="<%=elem._id%>">+</button>
+                <button id="<%=elem._id%>">-</button>
+            </div>
+            <div class="buttons">
+                <button id="<%=elem._id%>">Delete</button>
+                <button>view Description</button>
+            </div>
+            <div class="description"><%=elem.productdescription%></div>
+        </div>
+      <% })%>
+    </div>
+</div>
+
+<script src="addtocart.js"></script>
+<script src="errorSuccessShow.js"></script>
+

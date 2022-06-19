@@ -1,0 +1,38 @@
+<%- include('partials/navBar.ejs',{userData:""}) %>
+<link rel="stylesheet" href="../../page1_PLus_cart.css">
+ <div class="mid-Content">
+         <% if(err){%>
+             <div id="wrong"><%=message%></div>
+         <% }%>
+        <div class="cards_Containor">
+        <%items.forEach(function(elem){%>
+        
+            <div class="card">
+                <img class="img" src="../../<%=elem.productimage%>" alt="img">
+                <div class="inputTags">
+                    <div class="label"><label for="ProductName"> Product Name: </label></div>
+                    <div class="input"> <h3><%=elem.productname%></h3></div>
+                </div>
+                <div class="inputTags">
+                   <div class="label"> <label for="ProducDescription"> Product Description: </label> </div>
+                   <div class="desc"> <h3><%=elem.productdescription%></h3></div>
+                </div>
+                <div class="inputTags">
+                    <div class="label">  <label for="ProductPrice"> Product Price: </label></div>
+                    <div class="input"> <h3>Rs <%=elem.productprice%></h3></div>
+                </div>
+                <div class="inputTags">
+                    <div class="label">   <label for="ProductQuantity"> Product Quantity: </label></div>
+                    <div class="input"> <h3><%=elem.stock%></h3> </div>
+                </div>
+                <div class="buttons">
+                <button class="view-details" id="<%=elem._id%>">Update</button>
+                <button class="added" id="<%=elem._id%>">Delete</button>
+                </div>
+            </div>  
+        <% })%>
+        </div>
+    </div>
+
+</body>
+<script src="../../adminPage1.js"></script>

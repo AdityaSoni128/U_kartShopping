@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+.main{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("./ecomBackImg.jpg") center  no-repeat;
+  background-size: 100vw 100vh;
+}
+button{
+  background-color: blue;
+  color: antiquewhite;
+  margin: 0 4vw;
+  padding: 2vh 2vw;
+  font-size: 1.5vw;
+  border: none;
+  border-radius: .4vw;
+}
+button:hover{
+  background-color: antiquewhite;
+  color: blue;
+}
+.main h1{
+  position: absolute;
+  top: 14vh;
+  font-size: 3vw;
+  font-family:'Kalam', "cursive";
+}

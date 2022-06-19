@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="../../addProduct.css">
+<div class="main">
+    <h1>Add Product Page   (<%=data%>)</h1>
+    <div class="containor">
+        <form  method="post" action="/admin/addProduct" enctype="multipart/form-data">
+            <div class="inputTags">
+                <div class="label"><label for="ProductName"> Product Name: </label></div>
+                <div class="label"> <input required value="" name="name" type="text" id="ProductName" placeholder="Enter Product Name"></div>
+            </div>
+            <div class="inputTags">
+               <div class="label"> <label for="ProducDescription"> Product Description: </label> </div>
+               <div class="label"> <input required name="description" type="text" id="ProducDescription" placeholder="Enter Product Description"></div>
+            </div>
+            <div class="inputTags">
+                <div class="label">  <label for="ProductPrice"> Product Price: </label></div>
+                <div class="input"> <input required name="price" type="number" id="ProductPrice" placeholder="Enter Product Price"></div>
+            </div>
+            <div class="inputTags">
+                <div class="label">   <label for="ProductQuantity"> Product Quantity: </label></div>
+                <div class="input"><input required name="quantity" type="number" id="ProductQuantity" placeholder="Enter Product Quantity"></div>
+            </div>
+            <div class="inputTags">
+                <div class="label">  <label for="ProductImage"> Product Image: </label></div>
+                <div class="input"> <input required name="image" type="file" id="ProductImage" placeholder="Enter Product Image"></div>
+            </div>
+            <input type="submit" id="addProduct" value="Add Product">
+            </form>
+    </div>
+</div>

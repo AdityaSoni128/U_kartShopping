@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="navbar.css">
+<div class="navbar">
+<%if(userData){%>
+ <div class="user-details">
+      <img src="<%=userData.image%>" alt="user">
+      <h2><%= userData.username%></h2>
+ </div>
+      <h1>Welcome to U-Kart_Shopping</h1>
+      <button id="changePassword"><a href="/changepassword">Change Password</a></button>  
+      <button id="AddToCart"><a href="/addToCart"> My Cart</a></button>
+      <button id="logout"><a href="/logout">LogOut</a></button> 
+   
+   <%} else{%>
+        <h1>Welcome to U-Kart_Shopping</h1>
+        <button id="AddToCart"><a href="/addToCart"> My Cart</a></button>
+        <button id="login"><a href="/login"> Login</a></button>
+     <%}%>
+</div>
